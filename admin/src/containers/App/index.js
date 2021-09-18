@@ -8,13 +8,13 @@ import pluginId from "../../pluginId";
 import HomePage from "../HomePage";
 
 const App = () => (
-  <div>
-    <GlobalStyle />
-    <Switch>
-      <Route path={`/plugins/${pluginId}`} component={HomePage} exact />
-      <Route component={NotFound} />
-    </Switch>
-  </div>
+    <div>
+        <GlobalStyle />
+        <Switch>
+            <Route path={`/plugins/${pluginId}`} component={HomePage} exact />
+            <Route component={NotFound} />
+        </Switch>
+    </div>
 );
 
 export default App;

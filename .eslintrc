@@ -21,29 +21,16 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "warn",
+    "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",
-    "import/order": [
-      "error",
+    "prettier/prettier": [
+      "off",
       {
-        "groups": ["builtin", "external", "internal"],
-        "pathGroups": [
-          {
-            "pattern": "react",
-            "group": "external",
-            "position": "before"
-          }
-        ],
-        "pathGroupsExcludedImportTypes": ["react"],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
+        "tabWidth": 4,
+        "trailingComma": "es5"
       }
-    ],
-    "prettier/prettier": "error"
+    ]
   },
   "globals": {
     "strapi": true

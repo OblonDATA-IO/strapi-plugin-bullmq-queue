@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-github-publish",
+  "name": "strapi-plugin-bullmq-queue",
   "version": "0.1.0",
   "description": "A plugin to easily trigger GitHub Actions workflows from Strapi.",
   "strapi": {
@@ -7,7 +7,9 @@
     "icon": "plug",
     "description": "Publish changes via GitHub Actions."
   },
-  "dependencies": {},
+  "dependencies": {
+    "bullmq": "^1.47.1"
+  },
   "scripts": {
     "lint": "NODE_ENV=test npm-run-all --parallel lint:*",
     "lint:js": "eslint \"**/*.{js,jsx}\"",
@@ -17,18 +19,7 @@
     "fix:format": "prettier \"**/*.{md,html,yaml,yml,json}\" --write",
     "depcheck": "npx npm-check --update"
   },
-  "author": {
-    "name": "Phantom Studios Ltd.",
-    "email": "boo@phntms.com",
-    "url": "https://www.phntms.com"
-  },
-  "maintainers": [
-    {
-      "name": "Phantom Studios Ltd.",
-      "email": "boo@phntms.com",
-      "url": "https://www.phntms.com"
-    }
-  ],
+  "author": "OblonDATA.IO Limited <contact@oblondata.io>",
   "engines": {
     "node": ">=10.16.0 <=14.x.x",
     "npm": ">=6.0.0"
@@ -36,13 +27,13 @@
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.23.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.2.1"
+    "prettier": "^2.4.1"
   }
 }
