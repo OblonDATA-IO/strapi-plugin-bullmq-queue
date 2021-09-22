@@ -1,9 +1,9 @@
 {
   "home.title": "Publishing",
-  "home.description": "Publish changes to GitHub",
+  "home.description": "Publish changes",
   "home.notready": "Checking status...",
-  "home.prompt": "Clicking the below button will trigger the site to rebuild with new content, are you sure?",
-  "home.prompt.confirm": "Are you sure you wish to publish?",
-  "home.busy": "The site is currently rebuilding, please wait.",
+  "home.prompt": "Clicking the below button will trigger the workflow to rebuild with new content, are you sure?",
+  "home.prompt.confirm": "Are you sure you wish to publish your changes?",
+  "home.busy": "The site is currently being rebuilt, please wait...",
   "home.button.publish": "Publish"
 }

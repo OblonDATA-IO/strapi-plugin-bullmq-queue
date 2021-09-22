@@ -1,15 +1,16 @@
-"use strict";
-
+const pluginId = require("../admin/src/pluginId");
 const { Queue } = require("bullmq");
-const queue = new Queue("gridsome-builder");
 
 module.exports = {
     async check (ctx) {
-        const jobs = queue.getJobs(["wait", "delayed", "active"]);
+        const { queueName, } = strapi.plugins[pluginId].config;
+        const queue = new Queue(queueName ?? "gridsome-builder");
+        const jobs = await queue.getJobs(["wait", "delayed", "active"]);
         ctx.send({ "busy": jobs.length > 0 });
     },
-
     async publish (ctx) {
+        const { queueName, } = strapi.plugins[pluginId].config;
+        const queue = new Queue(queueName ?? "gridsome-builder");
         await queue.add("myhouse.homes", "");
         ctx.send({ "success": true });
     },

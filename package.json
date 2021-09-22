@@ -1,11 +1,11 @@
 {
   "name": "strapi-plugin-bullmq-queue",
-  "version": "0.1.0",
-  "description": "A plugin to easily trigger GitHub Actions workflows from Strapi.",
+  "version": "0.1.1",
+  "description": "A plugin to trigger BullMQ workflow from Strapi admin panel.",
   "strapi": {
-    "name": "GitHub Publishing",
+    "name": "Publish Site",
     "icon": "plug",
-    "description": "Publish changes via GitHub Actions."
+    "description": "Publish changes and trigger worker via Redis."
   },
   "dependencies": {
     "bullmq": "^1.47.1"
